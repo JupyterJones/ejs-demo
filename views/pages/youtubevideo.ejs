@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--% import YoutubeEmbed from 'js/Youtubevideo.js' %-->
+
+<head>
+    <%- include('../partials/header'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <!--%- include('../partials/Youtubevideo'); %-->
+        <%- include('../partials/head'); %>
+    </header>
+    <%- include('../partials/head'); %>
+        <main>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="jumbotron">
+                        <h1>Embedding a YouTube Video</h1>
+                        <p>Embedding a vide0 is as simple as copy and paste the YouTube "embedded share"</p>
+                    </div>
+
+                    <iframe title='YouTube video player' type=\" text/html\" width='730' height='420'
+                        src='http://www.youtube.com/embed/wAQnYgnzhfM' frameborder='0' allowFullScreen></iframe>
+                    <pre style="width: 730px; border:1px solid lightgray;padding:10px;">
+ReneeChoiPhotography
+5.84K subscribers
+Music in this video
+Learn more
+Listen ad-free with YouTube Premium
+Song
+Wicked Game (Live at Killkenny Arts Festival)
+Artist
+James Vincent McMorrow
+Album
+We Don't Eat EP
+Writers
+Chris Isaak
+Licensed to YouTube by
+BMG Rights Management (Europe) GmbH, Believe Music, UMG, WMG,
+The Orchard Music (on behalf of Dine Alone Music Inc.);
+ООО С.Б.А. Мьюзик Паблишинг/S.B.A.Music Publishing LTD, 
+LatinAutor - UMPG, CMRRA, UNIAO BRASILEIRA DE EDITORAS DE MUSICA
+- UBEM, LatinAutorPerf, UMPG Publishing, LatinAutor - 
+Warner Chappell, PEDL, ASCAP, Warner Chappell, and 13 Music Rights
+Societies
+</pre>
+                </div>
+
+
+                <div class=" col-sm-4">
+                    <div class="well">
+                        <h3>A Side of Snippets</h3>
+                        <code>
+<pre>
+&lt;iframe title='YouTube video player'
+type=\" text/html\"
+width='730' height='420'
+src='http://www.youtube.com/embed/wAQnYgnzhfM' 
+frameborder='0' allowFullScreen&gt;
+&lt;/iframe&gt;
+</pre>
+                    </code>
+                    </div>
+
+
+                </div>
+        </main>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+           <script src="node_modules/ejs.js"></script>
+
+                <% let people=['geddy', 'neil' , 'alex' ]; %>
+                    <% let html=ejs.render('%>
+                        <%=people.join(", "); %><%', { people: people }); %>
+                            </div>
+
+
+
+
+
+import React from "react";
+import PropTypes from "prop-types";
+
+const YoutubeEmbed = ({ embedId }) => (
+<div className="video-responsive">
+    <iframe width="853" height="480" //src={'wAQnYgnzhfM&t'} frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+        title="Embedded youtube" />
+</div>
+);
+//https://www.youtube.com/watch?v=wAQnYgnzhfM
+YoutubeEmbed.propTypes = {
+embedId: PropTypes.string.isRequired
+};
+
+//export default YoutubeEmbed;
+YoutubeEmbed()

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--% import YoutubeEmbed from 'js/Youtubevideo.js' %-->
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <!--%- include('../partials/Youtubevideo'); %-->
+        <%- include('../partials/head'); %>
+    </header>
+    <%- include('../partials/head'); %>
+        <main>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="jumbotron">
+                        <h1>This Page is dedicated to Experiments</h1>
+                        <p>It's primary purpose is to provide idea and snippets</p>
+                    </div>
+                    <% const renderRadios=(value, name)=> { %>
+                        <div style="display: block;">
+                            <input type="radio" id="<%= name %><%= value %>" class="" name="<%= name %>"
+                                value="<%= value %>" required />
+                            <label for="<%= name %><%= value %>" class="">
+                                <%= value %>
+                            </label>
+                        </div>
+                        <% } %>
+
+                            <% for (let i=1; i <=5; i++) { %>
+                                <%= renderRadios(i, 'eventRate' ); %>
+                                    <% } %>
+
+
+                                        <iframe title='YouTube video player' type=\" text/html\" width='640'
+                                            height='390' src='http://www.youtube.com/embed/W-Q7RMpINVo' frameborder='0'
+                                            allowFullScreen></iframe>
+                                        <div id="output"></div>
+                                        <script src="ejs.min.js"></script>
+                </div>
+
+
+                <div class=" col-sm-4">
+                    <div class="well">
+                        <h3>A Side of Snippets</h3>
+                        <code>
+<pre>
+&lt;% const renderRadios=(value, name)=> { %&gt;
+   &lt;div style="display: block;"&gt;
+   &lt;input type="radio" id="&lt;%= name %&gt;&lt;%= value %&gt;" class=""
+   name="&lt;%= name %&gt;" value="&lt;%= value %&gt;" required /&gt;
+   &lt;label for="&lt;%= name %&gt;&lt;%= value %&gt;" class=""&gt;
+   &lt;%= value %&gt;
+      &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;% } %&gt;
+                        
+    &lt;% for (let i=1; i &lt;=5; i++) { %&gt;
+    &lt;%= renderRadios(i, 'eventRate' ); %&gt;
+    &lt;% } %&gt;
+</pre>
+                    </code>
+                    </div>
+
+
+                </div>
+        </main>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+
+</body>
+
+</html>

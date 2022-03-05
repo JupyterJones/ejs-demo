@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <%- include('../partials/head'); %>
 </head>
-<body class="container">
+<style>
+    .bkground {
+        background-color: aquamarine;
+    }
+</style>
+
+<body class="container bkground">
 
     <header>
         <%- include('../partials/header'); %>
@@ -11,15 +19,19 @@
 
     <main>
         <div class="jumbotron">
-            <h1>Top Mascots</h1>
-            <p><%= tagline %></p>
+            <h1>Main Bootstrap Topics</h1>
+            <p>
+                <%= tagline %>
+            </p>
             <ul>
-                <% mascots.forEach(function(mascot) { %>
+                <% bootstraps.forEach(function(bootstraps) { %>
                     <li>
-                        <strong><%= mascot.name %></strong>
-                        representing <%= mascot.organization %>, born <%= mascot.birth_year %>
+                        <strong>
+                            <%= bootstraps.name %>
+                        </strong>
+                        Source: <%= bootstraps.organization %>, born <%= bootstraps.birth_year %>
                     </li>
-                <% }); %>
+                    <% }); %>
             </ul>
         </div>
     </main>
@@ -29,4 +41,5 @@
     </footer>
 
 </body>
+
 </html>

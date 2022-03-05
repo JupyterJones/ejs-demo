@@ -1,8 +1,21 @@
 {
   "name": "node-ejs",
   "main": "server.js",
+  "version": "1.0.0",
+  "description": "working with bootstrap",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "author": "jack northrup",
+  "license": "MIT",
   "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "styled-components": "^5.3.3",
+    "type": "module"
   }
 }

@@ -8,24 +8,50 @@ app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 
 // index page 
-app.get('/', function(req, res) {
-    var mascots = [
-        { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
-        { name: 'Tux', organization: "Linux", birth_year: 1996},
-        { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
+app.get('/', function (req, res)
+{
+    var bootstraps = [
+        { name: 'CSS', organization: "Using Local Copy or CDN", birth_year: 2012 },
+        { name: 'JavaScript', organization: "Powerful JavaScript plugins", birth_year: "local install with npm or link to CDN." },
+        { name: 'HTML5', organization: "Docker", birth_year: 2013 }
     ];
-    var tagline = "No programming concept is complete without a cute animal mascot.";
+    var tagline = "If You Can Imagine You Can Build it using BootStrap CSS, JavaScript.";
 
     res.render('pages/index', {
-        mascots: mascots,
+        bootstraps: bootstraps,
         tagline: tagline
     });
 });
 
 // about page
-app.get('/about', function(req, res) {
+app.get('/about', function (req, res)
+{
     res.render('pages/about');
 });
 
+// bootstrap page
+app.get('/bootstrap', function (req, res)
+{
+    res.render('pages/bootstrap');
+});
+
+//Experiments
+app.get('/experiments', function (req, res)
+{
+    res.render('pages/experiments');
+});
+
+//Youtube Video
+//Experiments
+app.get('/youtubevideo', function (req, res)
+{
+    res.render('pages/youtubevideo');
+});
+app.get('/bootstrapexample', function (req, res)
+{
+    res.render('pages/bootstrapexample');
+});
+
+app.use(express.static('public'))
 app.listen(8080);
-console.log('8080 is the magic port');
+console.log('Your being served at localhost:8080');
