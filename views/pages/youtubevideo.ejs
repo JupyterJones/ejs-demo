@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--% import YoutubeEmbed from 'js/Youtubevideo.js' %-->
-
+<link rel="stylesheet" type="text/css" href="css/video.css" />
 <head>
     <%- include('../partials/header'); %>
 </head>
-
-<body class="container">
+<style>
+    .bkground {
+        background-color: rgb(74, 131, 196);
+    }
+    .hbkground {
+        background-color: rgb(245, 234, 199);
+    }
+    .sideback {
+        background-color: rgb(144, 200, 226);
+        margin-left: -15px;
+    }
+</style>
+<body class="container bkground">
 
     <header>
-        <!--%- include('../partials/Youtubevideo'); %-->
+        <!--%- include('../partials/Youtubevideo'); %
+        src='http://www.youtube.com/embed/wAQnYgnzhfM' 
+        -->
         <%- include('../partials/head'); %>
     </header>
     <%- include('../partials/head'); %>
         <main>
             <div class="row">
                 <div class="col-sm-8">
-                    <div class="jumbotron">
+                    <div class="jumbotron hbkground">
                         <h1>Embedding a YouTube Video</h1>
                         <p>Embedding a vide0 is as simple as copy and paste the YouTube "embedded share"</p>
                     </div>
+<div class="video-container">
+                    <iframe title='YouTube video player' type=\" text/html\" width="560" height="349"                 
+                        src="video/wickedgame.mp4"
+                        frameborder='0' allowFullScreen></iframe>
 
-                    <iframe title='YouTube video player' type=\" text/html\" width='730' height='420'
-                        src='http://www.youtube.com/embed/wAQnYgnzhfM' frameborder='0' allowFullScreen></iframe>
-                    <pre style="width: 730px; border:1px solid lightgray;padding:10px;">
+                        </div>
+                    <pre style="width: 730px; border:1px solid lightgray;padding:10px;background-color: rgb(168, 176, 184);">
 ReneeChoiPhotography
 5.84K subscribers
 Music in this video
@@ -49,7 +65,7 @@ Societies
                 </div>
 
 
-                <div class=" col-sm-4">
+                <div class=" col-sm-4 sideback">
                     <div class="well">
                         <h3>A Side of Snippets</h3>
                         <code>
