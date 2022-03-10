@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--% import YoutubeEmbed from 'js/Youtubevideo.js' %-->
+<link rel="stylesheet" type="text/css" href="css/video.css" />
+<head>
+    <%- include('../partials/headera'); %>
+</head>
+<style>
+    html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+    .bkg {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='hsla(258.5,59.4%,59.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    
+  }
+    .bkground {
+        background-color: rgb(74, 131, 196);
+    }
+    .hbkground {
+        background-color: rgb(245, 234, 199);
+    }
+    .sideback {
+        background-color: rgb(144, 200, 226);
+        margin-left: -15px;
+        
+    }
+    .sz{
+        font-size: 1.5rem;
+    }
+</style>
+<body class="container bkground">
+
+    <header>
+        <!--%- include('../partials/Youtubevideo'); %
+        src='http://www.youtube.com/embed/wAQnYgnzhfM' 
+        -->
+        <%- include('../partials/head'); %>
+    </header>
+    <%- include('../partials/head'); %>
+        <main>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="jumbotron bkg">
+                        <h1>Angelarium: The Book of Angels</h1>
+<pre>
+109,961 views  Mar 1, 2022
+8.3K LIKES
+Tale Foundry
+350K subscribers
+</pre>
+                    </div>
+<div class="video-container">
+                    <iframe title='YouTube video player' type=\" text/html\" width="560" height="349"                 
+                        src="https://www.youtube.com/embed/rYGISX6-eo0"
+                        frameborder='0' allowFullScreen></iframe>
+
+                        </div>
+                    <pre style="width: 730px; border:1px solid lightgray;padding:10px;background-color: rgb(168, 176, 184);">
+CURIOSITY STREAM ➤ http://curiositystream.com/talefoundry
+Click here to watch the FULL COMPANION VIDEO to this one 
+➤ (link to video on Nebula)
+
+There’s some… really weird stuff we had to leave out of 
+this one, trust me it’s worth it. Sign up for a year of 
+Curiosity Stream with the code TALEFOUNDRY to get a free
+ year of access to our new creator-run streaming platform,
+  Nebula, where the companion video is hosted! 
+  All for only $14.79 PER YEAR! Not per month, PER YEAR!
+</pre>
+                </div>
+
+
+                <div class=" col-sm-4 sideback">
+                    <div class="well text-center">
+                        <h2>Menu</h2>
+                        <code>
+<ul class="nav flex-column mr-auto bglight up">
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/">&nbsp;&nbsp;Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/about">&nbsp;&nbsp;About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/bootstrap">&nbsp;&nbsp;BootStrap</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/bootstrapexample"
+        >&nbsp;&nbsp;BootStrap Example</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/experiments"
+        >&nbsp;&nbsp;Experiments</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/youtubevideo">&nbsp;&nbsp;A YouTube Video</a>
+    </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold sz" href="/angelarium">&nbsp;&nbsp;Angelarium</a>
+    </li>
+  </ul>
+                    </code>
+                    </div>
+
+
+                </div>
+        </main>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+
+</body>
+
+</html>

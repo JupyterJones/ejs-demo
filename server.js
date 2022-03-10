@@ -55,6 +55,9 @@ app.get("/experiments", function (req, res) {
 app.get("/youtubevideo", function (req, res) {
   res.render("pages/youtubevideo");
 });
+app.get("/angelarium", function (req, res) {
+  res.render("pages/angelarium");
+});
 app.get("/bootstrapexample", function (req, res) {
   res.render("pages/bootstrapexample");
 });
