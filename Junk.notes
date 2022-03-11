@@ -41,3 +41,26 @@ YoutubeEmbed()
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
+
+<h2>Clearing git cache of a large file</h2>
+<pre>
+git filter-branch --force --index-filter \
+  'git rm --cached --ignore-unmatch public/video/PugTemplateEngine.mp4' \
+  --prune-empty --tag-name-filter cat -- --all
+  </pre>
+
+
+
+                      <% const renderRadios=(value, name)=> { %>
+                        <div style="display: block;">
+                            <input type="radio" id="<%= name %><%= value %>" class="" name="<%= name %>"
+                                value="<%= value %>" required />
+                            <label for="<%= name %><%= value %>" class="">
+                                <%= value %>
+                            </label>
+                        </div>
+                        <% } %>
+
+                            <% for (let i=1; i <=5; i++) { %>
+                                <%= renderRadios(i, 'eventRate' ); %>
+                                    <% } %>
